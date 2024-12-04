@@ -1,0 +1,28 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+		
+	<PropertyGroup>
+		<MreTargetFramework>net9.0</MreTargetFramework>
+		<MreEntityFrameworkVersion>9.0.0</MreEntityFrameworkVersion>
+		<MreReferenceEntityFrameworkCoreClickHousePackage>true</MreReferenceEntityFrameworkCoreClickHousePackage>
+		<MreReferenceEntityFrameworkCoreClickHouseSource>false</MreReferenceEntityFrameworkCoreClickHouseSource>
+		<MreEntityFrameworkCoreClickHouseVersion>1.0.0</MreEntityFrameworkCoreClickHouseVersion>
+		<MreReferenceClickHouseClientPackage>false</MreReferenceClickHouseClientPackage>
+		<MreReferenceClickHouseClientSource>false</MreReferenceClickHouseClientSource>
+		<MreClickHouseClientVersion>7.9.1</MreClickHouseClientVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="3.3.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="$(MSBuildThisFileDirectory)\BannedSymbols.txt" />
+	</ItemGroup>
+</Project>

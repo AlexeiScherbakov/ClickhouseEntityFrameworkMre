@@ -1,0 +1,2 @@
+N:System.Data.Entity; Use Microsoft.EntityFrameworkCore instead
+T:System.Data.Entity.QueryableExtensions; Use Microsoft.EntityFrameworkCore instead

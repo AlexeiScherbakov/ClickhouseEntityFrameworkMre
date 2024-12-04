@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>$(MreTargetFramework)</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup Condition=" '$(MreReferenceEntityFrameworkCoreClickHousePackage)'=='true' ">
+	  <PackageReference Include="EntityFrameworkCore.ClickHouse" Version="$(MreEntityFrameworkCoreClickHouseVersion)" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(MreReferenceClickHouseClientPackage)'=='true' ">
+	  <PackageReference Include="ClickHouse.Client" Version="$(MreClickHouseClientVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Database\Database.csproj" />
+	</ItemGroup>
+
+</Project>

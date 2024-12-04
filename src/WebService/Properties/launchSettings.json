@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "LocalDocker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "LocalDocker"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5011"
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}
