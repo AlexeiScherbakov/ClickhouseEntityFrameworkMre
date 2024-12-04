@@ -1,0 +1,2 @@
+# ClickhouseEntityFrameworkMre
+Minimal Reproducible Example Template for Clickhouse+EntityFramework
